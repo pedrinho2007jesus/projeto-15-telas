@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+header.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 20px 32px;
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.28rem;
+  font-weight: 700;
+  color: #fff;
+}
+.menu {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.busca {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.busca input {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  min-width: 180px;
+}
+.busca input::placeholder {
+  color: rgba(255, 255, 255, 0.64);
+}
+.busca button,
+.btn-login {
+  border: 1px solid #fff;
+  border-radius: 14px;
+  padding: 12px 18px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+.categoria-container h1 {
+  margin-bottom: 24px;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  color: #fff;
+}
+.filtros {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.filtros button {
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+}
+.grid-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+.card-post {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 22px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+.imagem-post {
+  height: 170px;
+  border-radius: 22px;
+  background: #fff;
+  margin-bottom: 18px;
+}
+.card-post h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.card-post p {
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0;
+}
+.carregar {
+  text-align: center;
+  margin-top: 34px;
+}
+.carregar button {
+  padding: 14px 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+}
+.rodape {
+  padding: 26px 24px 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.links-rodape {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.links-rodape a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+@media (max-width: 720px) {
+  header.topo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .busca {
+    width: 100%;
+  }
+  .grid-posts {
+    grid-template-columns: 1fr;
+  }
+}
