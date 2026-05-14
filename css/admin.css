@@ -1,0 +1,48 @@
+* {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.form-post input,
+.form-post textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-post textarea {
+  height: 230px;
+  resize: none;
+  margin-top: 16px;
+}
+
+.linha-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.acoes-post {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn-publicar {
+  background: #0f766e;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .linha-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .acoes-post {
+    flex-direction: column;
+  }
+}
