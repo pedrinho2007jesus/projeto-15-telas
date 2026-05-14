@@ -1,0 +1,100 @@
+  raio-da-borda: 12px;
+}
+.populares{
+  mostrar:grade;
+  colunas-modelo-grade: repita(3, 1fr);
+  brecha: 18px;
+}
+.populares artigo{
+  altura: 130px;
+  fundo:branco;
+  fronteira: 1pxsólido#ddd;
+  raio-da-borda: 10px;
+  acolchoamento: 18px;
+  mostrar:flexível;
+  alinhar-itens:extremidade flexível;
+  peso da fonte:audacioso;
+}
+.categorias{
+  mostrar:grade;
+  colunas-modelo-grade: repita(5, 1fr);
+  brecha: 16px;
+}
+.categorias um{
+  fundo:branco;
+  fronteira: 1pxarrancado#ddd;
+  raio-da-borda: 8px;
+  acolchoamento: 18px;
+  alinhamento de texto:centro;
+  cor: #111;
+  decoração de texto:nenhum;
+}
+.área-baixo{
+  mostrar:grade;
+  colunas-modelo-grade: 2fr 1fr;
+  brecha: 18px;
+  margem superior: 35px;
+}
+.publicar{
+  mostrar:flexível;
+  brecha: 18px;
+  fundo:branco;
+  fronteira: 1pxsólido#ddd;
+  raio-da-borda: 10px;
+  acolchoamento: 16px;
+  margem inferior: 16px;
+}
+.imagem{
+  largura mínima: 120px;
+  altura: 95px;
+  fundo: #eeeeee;
+  raio-da-borda: 8px;
+}
+.publicar h3{
+  tamanho da fonte: 18px;
+}
+.editor{
+  fundo:branco;
+  fronteira: 1pxsólido#ddd;
+  raio-da-borda: 10px;
+  acolchoamento: 20px;
+}
+rodapé{
+  largura-máxima: 1200px;
+  margem: 0auto;
+  acolchoamento: 20px;
+}
+.links{
+  mostrar:grade;
+  colunas-modelo-grade: repita(5, 1fr);
+  brecha: 18px;
+}
+.links um{
+  fronteira: 1pxsólido#ddd;
+  raio-da-borda: 8px;
+  acolchoamento: 18px;
+  cor: #111;
+  decoração de texto:nenhum;
+  peso da fonte:audacioso;
+}
+@mídia(largura-máxima: 768px) {
+  .topo{
+    flexão direcional:coluna;
+    alinhar-itens:início flexível;
+  }
+  navegação,
+  .busca,
+  .botoes{
+    envoltório flexível:enrolar;
+  }
+  .herói,
+  .área-baixo{
+    colunas-modelo-grade: 1fr;
+  }
+  .populares,
+  .categorias,
+  .links{
+    colunas-modelo-grade: 1fr;
+  }
+}
+</estilo>
