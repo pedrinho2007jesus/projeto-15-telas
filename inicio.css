@@ -1,0 +1,230 @@
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: white;
+}
+
+.topo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 20px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topo strong {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.busca {
+  display: flex;
+  gap: 10px;
+}
+
+.busca input {
+  width: 190px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.busca button,
+.busca a,
+.btn-verde,
+.btn-borda {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.busca button,
+.busca a,
+.btn-borda {
+  background: white;
+  color: #0f766e;
+  border: 1px solid #0f766e;
+}
+
+.btn-verde {
+  background: #0f766e;
+  color: white;
+  border: 1px solid #0f766e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px 70px;
+  background: #fafafa;
+  border-top: 1px solid #ddd;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.banner {
+  height: 170px;
+  background: #eeeeee;
+  border-radius: 12px;
+}
+
+.populares {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.populares article {
+  height: 130px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.categorias a {
+  background: white;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+  color: #111;
+  text-decoration: none;
+}
+
+.area-baixo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+  margin-top: 35px;
+}
+
+.post {
+  display: flex;
+  gap: 18px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.imagem {
+  min-width: 120px;
+  height: 95px;
+  background: #eeeeee;
+  border-radius: 8px;
+}
+
+.post h3 {
+  font-size: 18px;
+}
+
+.editor {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.links a {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav,
+  .busca,
+  .botoes {
+    flex-wrap: wrap;
+  }
+
+  .hero,
+  .area-baixo {
+    grid-template-columns: 1fr;
+  }
+
+  .populares,
+  .categorias,
+  .links {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
