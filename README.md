@@ -10,7 +10,7 @@ Projeto desenvolvido para fins acadêmicos utilizando HTML e CSS.
 - Guilherme dos Santos
 - Felipe Moreira Felix
 
-## Tecnologias utilizadas
+## linguagem ultilizada
 - HTML
 - CSS
 
