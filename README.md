@@ -1,4 +1,4 @@
-# Projeto HABIT
+# Projeto 15 telas
 
 Projeto desenvolvido para fins acadêmicos utilizando HTML e CSS.
 
